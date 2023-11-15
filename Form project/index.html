@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text">Welcome to Our Website</h1>
+    </div>
+    <div class="buttons">
+      <button class="btn signinButton">Signin</button>
+      <button class="btn signupButton">Signup</button>
+    </div>
+
+    <!--///////////////////////// Forms /////////////////// -->
+
+    <!--signup form  -->
+
+    <div class="form-container hidden-signup">
+      <div class="form-wraper">
+        <h1>Signup</h1>
+        <button
+          class="signup-close-bar"
+          style="
+            width: 15%;
+            margin-top: -3.25rem;
+            margin-left: 20rem;
+            background: transparent;
+            color: rgb(255, 136, 0);
+            font-size: 40px;
+          "
+        >
+          &times;
+        </button>
+
+        <form>
+          <div class="form-group">
+            <label for="FirstName">FirstName:</label>
+            <input
+              required
+              type="text"
+              placeholder="firstname"
+              autocomplete="on"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">LastName</label>
+            <input
+              required
+              type="text"
+              placeholder="lastname"
+              autocomplete="on"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">PhoneNumber:</label>
+            <input
+              required
+              type="tel"
+              placeholder="+2519......"
+              pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
+            />
+          </div>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              required
+              type="text"
+              placeholder="username"
+              autocomplete="on"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input required type="email" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input required type="password" placeholder="Password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password:</label>
+            <input required type="password" placeholder="Confirm Password" />
+          </div>
+          <button type="submit" class="register">SignUp</button>
+          <div class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a style="color: violet" href="#"><i>Terms & Conditions</i></a> and
+            <a style="color: violet" href="#"><i>Privacy Policy</i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signin form -->
+    <div class="form-container hidden-signin login-form">
+      <div class="form-wraper">
+        <h1>Login</h1>
+        <button
+          class="signin-close-bar"
+          style="
+            width: 15%;
+            margin-left: 23rem;
+            margin-top: -3.225rem;
+            background: transparent;
+            color: rgb(255, 136, 0);
+            font-size: 40px;
+          "
+        >
+          &times;
+        </button>
+        <div class="form-group">
+          <label for="Username">Username:</label>
+          <input
+            required
+            type="text"
+            placeholder="username"
+            autocomplete="on"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            required
+            type="password"
+            placeholder="password"
+            autocomplete="on"
+          />
+        </div>
+        <div class="check">
+          <input required type="checkbox" />
+          <label for="Forgot-password" class="Forgot-password"
+            ><a href="#">Forgot password?</a></label
+          >
+        </div>
+        <div class="form-group">
+          <button type="submit" class="login">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup Successfull">
+      <img src="images/icons8-check-100.png" alt="Error" />
+      <h1>SignUp Successfull</h1>
+      <p>Your data has been saved.</p>
+      <button class="btn okBtn">OK</button>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
